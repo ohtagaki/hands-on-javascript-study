@@ -109,3 +109,73 @@ console.log(12.05 ** 4) ///べき乗演算
 console.log(50 -+- 59 +-+ 12) //単項加算演算子・単項負値演算子
 
 console.log("---------bit演算---------")
+console.log("---------代入演算子---------")
+let sum = 15
+console.log(sum)
+sum += 17
+console.log(sum)
+sum += 35
+console.log(sum)
+let prod = 3
+console.log(prod)
+prod *= 4
+console.log(prod)
+prod *= 8
+console.log(prod)
+
+console.log("---------関係演算子---------")
+console.log(6 * 7 < 7 * 9)
+console.log(6 * 7 > 7 * 9)
+console.log(6 * 11 <= 7 * 9)
+console.log(6 *11 >= 7 * 9)
+
+
+//2-9 長整数
+console.log("---------長整数---------")
+console.log(900000007199993205694821 + 1 == 900000007199993205694821 + 2)
+console.log(900000007199993205694821n + 1n == 900000007199993205694821n + 2n)
+
+console.log(7n + 35n)
+console.log(102n - 35n)
+console.log(14n * 35n)
+console.log(1043n / 35n)
+console.log(104n ** 3n)
+
+//2-10 文字列
+console.log("---------文字列---------")
+console.log("He said \"I'm a teapot.\"")
+
+console.log("---------文字列を取り出す---------")
+console.log("Hi'roki"[2])
+console.log("Hi'roki"[5])
+console.log("Hi'roki"[-1])
+console.log("Hi'roki"[10])
+
+
+//2-11 テンプレート
+console.log("---------テンプレート---------")
+console.log(`tsthouga`)
+const candidate = "Nekonira"
+console.log(`${candidate}様`)
+
+//2-12 配列
+console.log("---------配列---------")
+days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+console.log(`8月は${days[7]}日間です`)
+console.log(`13月は${days[-1]}日間です`)
+
+feb = days[1]
+apr = days[3]
+jun = days[5]
+
+console.log(feb)
+console.log([apr, jun])
+
+// console.log("---------分割代入を用いた変数の入れ替え---------")
+// let taki = "僕たち"
+// let mitsuha = "私たち"
+// console.log(taki)
+// console.log(mitsuha)
+// [taki, mitsuha] =[mitsuha, taki]
+// console.log(taki)
+// console.log(mitsuha)
